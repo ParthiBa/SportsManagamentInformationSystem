@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7140ac74f6a46c98d16ab0f84df0984" Name="Diagram1">
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilityFriday" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilityMonday" Width="1.75" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilitySaturday" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilitySunday" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilityThursday" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilityTuesday" Width="4" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.availabilityWednesday" Width="1.5" PointX="3" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.BookingDetail" Width="1.5" PointX="6" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.Facility" Width="1.5" PointX="0.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.Member" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.Parent" Width="1.5" PointX="3" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsFacilityModelaaa.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__availabil__facil__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__BookingDe__Membe__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__BookingDeta__FID__117F9D94" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsFacilityModelaaa.FK__Parent__facility__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

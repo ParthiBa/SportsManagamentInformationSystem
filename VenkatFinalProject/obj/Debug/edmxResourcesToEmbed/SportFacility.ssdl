@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SportsFacilityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="availabilityFriday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilityMonday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilitySaturday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilitySunday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilityThursday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilityTuesday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="availabilityWednesday">
+    <Key>
+      <PropertyRef Name="facilityID" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Slot9To10" Type="smallint" />
+    <Property Name="slot10to11" Type="smallint" />
+    <Property Name="slot11to12" Type="smallint" />
+    <Property Name="slot12to13" Type="smallint" />
+    <Property Name="slot13to14" Type="smallint" />
+    <Property Name="slot14to15" Type="smallint" />
+    <Property Name="slot15to16" Type="smallint" />
+    <Property Name="slot16to17" Type="smallint" />
+    <Property Name="slot117to18" Type="smallint" />
+    <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookingDetails">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MemberID" Type="nvarchar" MaxLength="19" Nullable="false" />
+    <Property Name="DateofBooking" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Members">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="nvarchar" MaxLength="19" Nullable="false" />
+    <Property Name="MemberName" Type="nvarchar" MaxLength="50" />
+    <Property Name="phoneNumber" Type="nchar" MaxLength="50" />
+    <Property Name="address" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__BookingDe__Membe__1273C1CD">
+    <End Role="Members" Type="Self.Members" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SportsFacilityModelStoreContainer">
+    <EntitySet Name="availabilityFriday" EntityType="Self.availabilityFriday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilityMonday" EntityType="Self.availabilityMonday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilitySaturday" EntityType="Self.availabilitySaturday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilitySunday" EntityType="Self.availabilitySunday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilityThursday" EntityType="Self.availabilityThursday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilityTuesday" EntityType="Self.availabilityTuesday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="availabilityWednesday" EntityType="Self.availabilityWednesday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingDetails" EntityType="Self.BookingDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Members" EntityType="Self.Members" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BookingDe__Membe__1273C1CD" Association="Self.FK__BookingDe__Membe__1273C1CD">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

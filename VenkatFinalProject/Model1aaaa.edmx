@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SportsFacilityModelaaa.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="availabilityFriday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilityMonday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilitySaturday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilitySunday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilityThursday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilityTuesday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="availabilityWednesday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Slot9To10" Type="smallint" />
+          <Property Name="slot10to11" Type="smallint" />
+          <Property Name="slot11to12" Type="smallint" />
+          <Property Name="slot12to13" Type="smallint" />
+          <Property Name="slot13to14" Type="smallint" />
+          <Property Name="slot14to15" Type="smallint" />
+          <Property Name="slot15to16" Type="smallint" />
+          <Property Name="slot16to17" Type="smallint" />
+          <Property Name="slot117to18" Type="smallint" />
+          <Property Name="uniqid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BookingDetails">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="int" Nullable="false" />
+          <Property Name="FID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MemberID" Type="nvarchar" MaxLength="19" Nullable="false" />
+          <Property Name="DateofBooking" Type="datetime" Nullable="false" />
+          <Property Name="Slot" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Facility">
+          <Key>
+            <PropertyRef Name="FacilityID" />
+          </Key>
+          <Property Name="FacilityID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="FacilityType" Type="nchar" MaxLength="10" />
+          <Property Name="FacilityDescription" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Members">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="nvarchar" MaxLength="19" Nullable="false" />
+          <Property Name="MemberName" Type="nvarchar" MaxLength="50" />
+          <Property Name="phoneNumber" Type="nchar" MaxLength="50" />
+          <Property Name="address" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Parent">
+          <Key>
+            <PropertyRef Name="facilityID" />
+          </Key>
+          <Property Name="facilityID" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__availabil__facil__145C0A3F">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityMonday" Type="Self.availabilityMonday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityMonday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__164452B1">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityTuesday" Type="Self.availabilityTuesday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityTuesday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__182C9B23">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityWednesday" Type="Self.availabilityWednesday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityWednesday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1A14E395">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityThursday" Type="Self.availabilityThursday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityThursday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1BFD2C07">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityFriday" Type="Self.availabilityFriday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityFriday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1DE57479">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilitySaturday" Type="Self.availabilitySaturday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilitySaturday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1FCDBCEB">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilitySunday" Type="Self.availabilitySunday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilitySunday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookingDe__Membe__1273C1CD">
+          <End Role="Members" Type="Self.Members" Multiplicity="1" />
+          <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Members">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="BookingDetails">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookingDeta__FID__117F9D94">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1" />
+          <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="BookingDetails">
+              <PropertyRef Name="FID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Parent__facility__3D5E1FD2">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1" />
+          <End Role="Parent" Type="Self.Parent" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="Parent">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportsFacilityModelaaaStoreContainer">
+          <EntitySet Name="availabilityFriday" EntityType="Self.availabilityFriday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilityMonday" EntityType="Self.availabilityMonday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilitySaturday" EntityType="Self.availabilitySaturday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilitySunday" EntityType="Self.availabilitySunday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilityThursday" EntityType="Self.availabilityThursday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilityTuesday" EntityType="Self.availabilityTuesday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="availabilityWednesday" EntityType="Self.availabilityWednesday" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BookingDetails" EntityType="Self.BookingDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Facility" EntityType="Self.Facility" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Members" EntityType="Self.Members" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parent" EntityType="Self.Parent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__availabil__facil__145C0A3F" Association="Self.FK__availabil__facil__145C0A3F">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilityMonday" EntitySet="availabilityMonday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__164452B1" Association="Self.FK__availabil__facil__164452B1">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilityTuesday" EntitySet="availabilityTuesday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__182C9B23" Association="Self.FK__availabil__facil__182C9B23">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilityWednesday" EntitySet="availabilityWednesday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1A14E395" Association="Self.FK__availabil__facil__1A14E395">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilityThursday" EntitySet="availabilityThursday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1BFD2C07" Association="Self.FK__availabil__facil__1BFD2C07">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilityFriday" EntitySet="availabilityFriday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1DE57479" Association="Self.FK__availabil__facil__1DE57479">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilitySaturday" EntitySet="availabilitySaturday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1FCDBCEB" Association="Self.FK__availabil__facil__1FCDBCEB">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="availabilitySunday" EntitySet="availabilitySunday" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookingDe__Membe__1273C1CD" Association="Self.FK__BookingDe__Membe__1273C1CD">
+            <End Role="Members" EntitySet="Members" />
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookingDeta__FID__117F9D94" Association="Self.FK__BookingDeta__FID__117F9D94">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Parent__facility__3D5E1FD2" Association="Self.FK__Parent__facility__3D5E1FD2">
+            <End Role="Facility" EntitySet="Facility" />
+            <End Role="Parent" EntitySet="Parent" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SportsFacilityModelaaa" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="availabilityFriday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__1BFD2C07" FromRole="availabilityFriday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilityMonday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__145C0A3F" FromRole="availabilityMonday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilitySaturday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__1DE57479" FromRole="availabilitySaturday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilitySunday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__1FCDBCEB" FromRole="availabilitySunday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilityThursday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__1A14E395" FromRole="availabilityThursday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilityTuesday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__164452B1" FromRole="availabilityTuesday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="availabilityWednesday">
+          <Key>
+            <PropertyRef Name="facilityID" />
+            <PropertyRef Name="uniqid" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Slot9To10" Type="Int16" />
+          <Property Name="slot10to11" Type="Int16" />
+          <Property Name="slot11to12" Type="Int16" />
+          <Property Name="slot12to13" Type="Int16" />
+          <Property Name="slot13to14" Type="Int16" />
+          <Property Name="slot14to15" Type="Int16" />
+          <Property Name="slot15to16" Type="Int16" />
+          <Property Name="slot16to17" Type="Int16" />
+          <Property Name="slot117to18" Type="Int16" />
+          <Property Name="uniqid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__availabil__facil__182C9B23" FromRole="availabilityWednesday" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="BookingDetail">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="Int32" Nullable="false" />
+          <Property Name="FID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MemberID" Type="String" MaxLength="19" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateofBooking" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Slot" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Member" Relationship="Self.FK__BookingDe__Membe__1273C1CD" FromRole="BookingDetails" ToRole="Members" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__BookingDeta__FID__117F9D94" FromRole="BookingDetails" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="Facility">
+          <Key>
+            <PropertyRef Name="FacilityID" />
+          </Key>
+          <Property Name="FacilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="FacilityType" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FacilityDescription" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="availabilityFridays" Relationship="Self.FK__availabil__facil__1BFD2C07" FromRole="Facility" ToRole="availabilityFriday" />
+          <NavigationProperty Name="availabilityMondays" Relationship="Self.FK__availabil__facil__145C0A3F" FromRole="Facility" ToRole="availabilityMonday" />
+          <NavigationProperty Name="availabilitySaturdays" Relationship="Self.FK__availabil__facil__1DE57479" FromRole="Facility" ToRole="availabilitySaturday" />
+          <NavigationProperty Name="availabilitySundays" Relationship="Self.FK__availabil__facil__1FCDBCEB" FromRole="Facility" ToRole="availabilitySunday" />
+          <NavigationProperty Name="availabilityThursdays" Relationship="Self.FK__availabil__facil__1A14E395" FromRole="Facility" ToRole="availabilityThursday" />
+          <NavigationProperty Name="availabilityTuesdays" Relationship="Self.FK__availabil__facil__164452B1" FromRole="Facility" ToRole="availabilityTuesday" />
+          <NavigationProperty Name="availabilityWednesdays" Relationship="Self.FK__availabil__facil__182C9B23" FromRole="Facility" ToRole="availabilityWednesday" />
+          <NavigationProperty Name="BookingDetails" Relationship="Self.FK__BookingDeta__FID__117F9D94" FromRole="Facility" ToRole="BookingDetails" />
+          <NavigationProperty Name="Parent" Relationship="Self.FK__Parent__facility__3D5E1FD2" FromRole="Facility" ToRole="Parent" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="String" MaxLength="19" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MemberName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phoneNumber" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="BookingDetails" Relationship="Self.FK__BookingDe__Membe__1273C1CD" FromRole="Members" ToRole="BookingDetails" />
+        </EntityType>
+        <EntityType Name="Parent">
+          <Key>
+            <PropertyRef Name="facilityID" />
+          </Key>
+          <Property Name="facilityID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__Parent__facility__3D5E1FD2" FromRole="Parent" ToRole="Facility" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__availabil__facil__1BFD2C07">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityFriday" Type="Self.availabilityFriday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityFriday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__145C0A3F">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityMonday" Type="Self.availabilityMonday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityMonday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1DE57479">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilitySaturday" Type="Self.availabilitySaturday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilitySaturday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1FCDBCEB">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilitySunday" Type="Self.availabilitySunday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilitySunday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__1A14E395">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityThursday" Type="Self.availabilityThursday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityThursday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__164452B1">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityTuesday" Type="Self.availabilityTuesday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityTuesday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__availabil__facil__182C9B23">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="availabilityWednesday" Type="Self.availabilityWednesday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="availabilityWednesday">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookingDe__Membe__1273C1CD">
+          <End Role="Members" Type="Self.Member" Multiplicity="1" />
+          <End Role="BookingDetails" Type="Self.BookingDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Members">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="BookingDetails">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookingDeta__FID__117F9D94">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1" />
+          <End Role="BookingDetails" Type="Self.BookingDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="BookingDetails">
+              <PropertyRef Name="FID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Parent__facility__3D5E1FD2">
+          <End Role="Facility" Type="Self.Facility" Multiplicity="1" />
+          <End Role="Parent" Type="Self.Parent" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Facility">
+              <PropertyRef Name="FacilityID" />
+            </Principal>
+            <Dependent Role="Parent">
+              <PropertyRef Name="facilityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportsFacilityEntities5aaaaaaa" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="availabilityFridays" EntityType="Self.availabilityFriday" />
+          <EntitySet Name="availabilityMondays" EntityType="Self.availabilityMonday" />
+          <EntitySet Name="availabilitySaturdays" EntityType="Self.availabilitySaturday" />
+          <EntitySet Name="availabilitySundays" EntityType="Self.availabilitySunday" />
+          <EntitySet Name="availabilityThursdays" EntityType="Self.availabilityThursday" />
+          <EntitySet Name="availabilityTuesdays" EntityType="Self.availabilityTuesday" />
+          <EntitySet Name="availabilityWednesdays" EntityType="Self.availabilityWednesday" />
+          <EntitySet Name="BookingDetails" EntityType="Self.BookingDetail" />
+          <EntitySet Name="Facilities" EntityType="Self.Facility" />
+          <EntitySet Name="Members" EntityType="Self.Member" />
+          <EntitySet Name="Parents" EntityType="Self.Parent" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <AssociationSet Name="FK__availabil__facil__1BFD2C07" Association="Self.FK__availabil__facil__1BFD2C07">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilityFriday" EntitySet="availabilityFridays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__145C0A3F" Association="Self.FK__availabil__facil__145C0A3F">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilityMonday" EntitySet="availabilityMondays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1DE57479" Association="Self.FK__availabil__facil__1DE57479">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilitySaturday" EntitySet="availabilitySaturdays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1FCDBCEB" Association="Self.FK__availabil__facil__1FCDBCEB">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilitySunday" EntitySet="availabilitySundays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__1A14E395" Association="Self.FK__availabil__facil__1A14E395">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilityThursday" EntitySet="availabilityThursdays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__164452B1" Association="Self.FK__availabil__facil__164452B1">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilityTuesday" EntitySet="availabilityTuesdays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__availabil__facil__182C9B23" Association="Self.FK__availabil__facil__182C9B23">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="availabilityWednesday" EntitySet="availabilityWednesdays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookingDe__Membe__1273C1CD" Association="Self.FK__BookingDe__Membe__1273C1CD">
+            <End Role="Members" EntitySet="Members" />
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookingDeta__FID__117F9D94" Association="Self.FK__BookingDeta__FID__117F9D94">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Parent__facility__3D5E1FD2" Association="Self.FK__Parent__facility__3D5E1FD2">
+            <End Role="Facility" EntitySet="Facilities" />
+            <End Role="Parent" EntitySet="Parents" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SportsFacilityModelaaaStoreContainer" CdmEntityContainer="SportsFacilityEntities5aaaaaaa">
+          <EntitySetMapping Name="availabilityFridays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilityFriday">
+              <MappingFragment StoreEntitySet="availabilityFriday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilityMondays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilityMonday">
+              <MappingFragment StoreEntitySet="availabilityMonday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilitySaturdays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilitySaturday">
+              <MappingFragment StoreEntitySet="availabilitySaturday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilitySundays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilitySunday">
+              <MappingFragment StoreEntitySet="availabilitySunday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilityThursdays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilityThursday">
+              <MappingFragment StoreEntitySet="availabilityThursday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilityTuesdays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilityTuesday">
+              <MappingFragment StoreEntitySet="availabilityTuesday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="availabilityWednesdays">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.availabilityWednesday">
+              <MappingFragment StoreEntitySet="availabilityWednesday">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+                <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+                <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+                <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+                <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+                <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+                <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+                <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+                <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+                <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+                <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BookingDetails">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.BookingDetail">
+              <MappingFragment StoreEntitySet="BookingDetails">
+                <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="DateofBooking" ColumnName="DateofBooking" />
+                <ScalarProperty Name="Slot" ColumnName="Slot" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Facilities">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.Facility">
+              <MappingFragment StoreEntitySet="Facility">
+                <ScalarProperty Name="FacilityID" ColumnName="FacilityID" />
+                <ScalarProperty Name="FacilityType" ColumnName="FacilityType" />
+                <ScalarProperty Name="FacilityDescription" ColumnName="FacilityDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.Member">
+              <MappingFragment StoreEntitySet="Members">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="address" ColumnName="address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parents">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.Parent">
+              <MappingFragment StoreEntitySet="Parent">
+                <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="SportsFacilityModelaaa.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

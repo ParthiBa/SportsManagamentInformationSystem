@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14BDA27C-0514-4A05-8660-E9E4366A7C4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VenkatFinalProject</RootNamespace>
+    <AssemblyName>VenkatFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="availabilityFriday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilityMonday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilitySaturday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilitySunday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilityThursday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilityTuesday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="availabilityWednesday.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDetail.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AllentityBroker.cs" />
+    <Compile Include="Controllers\BookingFormControl.cs" />
+    <Compile Include="Controllers\CancelBookingControl.cs" />
+    <Compile Include="Controllers\CreateMemberControl.cs" />
+    <Compile Include="Controllers\InsertFacilityControl.cs" />
+    <Compile Include="Controllers\MaintainMemberControl.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\SearchBookingCOntrol.cs" />
+    <Compile Include="Controllers\UpdateorDeleteControl.cs" />
+    <Compile Include="EDM\EDMCommandPattern.cs" />
+    <Compile Include="EDM\EDMHandler.cs" />
+    <Compile Include="EntityClasses\FacilityBooking.cs" />
+    <Compile Include="EntityClasses\MemberbookingClass.cs" />
+    <Compile Include="EntityClasses\ProcessBookingInterface.cs" />
+    <Compile Include="Facility.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\bookingrecipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bookingrecipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormClass\BusinnesTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\BusinnesTransactionForm.Designer.cs">
+      <DependentUpon>BusinnesTransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\CancelBookingClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\CancelBookingClass.Designer.cs">
+      <DependentUpon>CancelBookingClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\CancelConfirmFormInterface.cs" />
+    <Compile Include="FormClass\ChainOfResponsibilityHandler.cs" />
+    <Compile Include="FormClass\ConfirmBookingClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\ConfirmBookingClass.Designer.cs">
+      <DependentUpon>ConfirmBookingClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\CRTrendOnBookingDay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTrendOnBookingDay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormClass\EmailMemberClass.cs" />
+    <Compile Include="FormClass\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\MemberCreationClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\MemberCreationClass.Designer.cs">
+      <DependentUpon>MemberCreationClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\MemberLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\MemberLookup.Designer.cs">
+      <DependentUpon>MemberLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\MemberReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MemberReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormClass\Occupancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\Occupancy.Designer.cs">
+      <DependentUpon>Occupancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\OccupancyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OccupancyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormClass\ResultListenerInterface.cs" />
+    <Compile Include="EntityClasses\UsersAbstractClass.cs" />
+    <Compile Include="FormClass\searchBookingFacilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\SportFacilitiesCreationClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\SportFacilitiesCreationClass.Designer.cs">
+      <DependentUpon>SportFacilitiesCreationClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\Trendchart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\Trendchart.Designer.cs">
+      <DependentUpon>Trendchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass\ViewMemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass\ViewMemberList.Designer.cs">
+      <DependentUpon>ViewMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1aaaa.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1aaaa.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1aaaa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1aaaa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1aaaa.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1aaaa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Team6sportsfacility1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Team6sportsfacility1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormClass\bookingrecipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>bookingrecipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\BusinnesTransactionForm.resx">
+      <DependentUpon>BusinnesTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\CancelBookingClass.resx">
+      <DependentUpon>CancelBookingClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\ConfirmBookingClass.resx">
+      <DependentUpon>ConfirmBookingClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\CRTrendOnBookingDay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTrendOnBookingDay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\MemberCreationClass.resx">
+      <DependentUpon>MemberCreationClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\MemberLookup.resx">
+      <DependentUpon>MemberLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\MemberReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MemberReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\Occupancy.resx">
+      <DependentUpon>Occupancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\OccupancyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OccupancyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\searchBookingFacilities.resx">
+      <DependentUpon>searchBookingFacilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\SportFacilitiesCreationClass.resx">
+      <DependentUpon>SportFacilitiesCreationClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\Trendchart.resx">
+      <DependentUpon>Trendchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass\ViewMemberList.resx">
+      <DependentUpon>ViewMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Model1aaaa.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1aaaa.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1aaaa.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1aaaa.edmx</DependentUpon>
+      <LastGenOutput>Model1aaaa.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model1aaaa.edmx.diagram">
+      <DependentUpon>Model1aaaa.edmx</DependentUpon>
+    </None>
+    <None Include="Model1aaaa.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1aaaa.edmx</DependentUpon>
+      <LastGenOutput>Model1aaaa.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Team6sportsfacility1.xsc">
+      <DependentUpon>Team6sportsfacility1.xsd</DependentUpon>
+    </None>
+    <None Include="Team6sportsfacility1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Team6sportsfacility1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Team6sportsfacility1.xss">
+      <DependentUpon>Team6sportsfacility1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

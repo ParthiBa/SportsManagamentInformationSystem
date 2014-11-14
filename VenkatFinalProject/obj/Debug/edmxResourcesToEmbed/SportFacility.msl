@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SportsFacilityModelStoreContainer" CdmEntityContainer="SportsFacilityEntities">
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="SportsFacilityModel.Member">
+        <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilityFridays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilityFriday">
+        <MappingFragment StoreEntitySet="availabilityFriday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilityMondays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilityMonday">
+        <MappingFragment StoreEntitySet="availabilityMonday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilitySaturdays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilitySaturday">
+        <MappingFragment StoreEntitySet="availabilitySaturday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilitySundays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilitySunday">
+        <MappingFragment StoreEntitySet="availabilitySunday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilityThursdays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilityThursday">
+        <MappingFragment StoreEntitySet="availabilityThursday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilityTuesdays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilityTuesday">
+        <MappingFragment StoreEntitySet="availabilityTuesday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="availabilityWednesdays">
+      <EntityTypeMapping TypeName="SportsFacilityModel.availabilityWednesday">
+        <MappingFragment StoreEntitySet="availabilityWednesday">
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="slot117to18" ColumnName="slot117to18" />
+          <ScalarProperty Name="slot16to17" ColumnName="slot16to17" />
+          <ScalarProperty Name="slot15to16" ColumnName="slot15to16" />
+          <ScalarProperty Name="slot14to15" ColumnName="slot14to15" />
+          <ScalarProperty Name="slot13to14" ColumnName="slot13to14" />
+          <ScalarProperty Name="slot12to13" ColumnName="slot12to13" />
+          <ScalarProperty Name="slot11to12" ColumnName="slot11to12" />
+          <ScalarProperty Name="slot10to11" ColumnName="slot10to11" />
+          <ScalarProperty Name="Slot9To10" ColumnName="Slot9To10" />
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingDetails">
+      <EntityTypeMapping TypeName="SportsFacilityModel.BookingDetail">
+        <MappingFragment StoreEntitySet="BookingDetails">
+          <ScalarProperty Name="DateofBooking" ColumnName="DateofBooking" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
